@@ -8,8 +8,10 @@ trait ClientSpecific
     {
         // Add client information on saving
         static::saving(function ($model) {
-            if (!$model->client_id) {
-                $model->client_id = App('Client')->id;
+            if (config('multiclient.active')) {
+                if (!$model->client_id) {
+                    $model->client_id = App('Client')->id;
+                }
             }
         });
 

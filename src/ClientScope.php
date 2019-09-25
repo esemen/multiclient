@@ -17,6 +17,8 @@ class ClientScope implements Scope
      */
     public function apply(Builder $builder, Model $model)
     {
-        $builder->where('client_id', App('Client')->id);
+        if (config('multiclient.active')) {
+            $builder->where('client_id', App('Client')->id);
+        }
     }
 }
