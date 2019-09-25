@@ -1,0 +1,23 @@
+{
+    "name": "esemen/multiclient",
+    "description": "Multi-client approach in same instance for Laravel 6+",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ozhan Esemen",
+            "email": "dev@esemen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Esemen\\MultiClient\\": [
+                "src",
+                "src/models"
+            ]
+        }
+    }
+}
