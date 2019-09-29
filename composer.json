@@ -16,7 +16,9 @@
         "psr-4": {
             "Esemen\\MultiClient\\": [
                 "src",
-                "src/models"
+                "src/models",
+                "src/scopes",
+                "src/traits"
             ]
         }
     }
