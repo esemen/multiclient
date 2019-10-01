@@ -21,5 +21,12 @@
                 "src/traits"
             ]
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Esemen\\MultiClient\\ClientServiceProvider"
+            ]
+        }
     }
 }
